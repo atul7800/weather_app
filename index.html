@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter your city name" spellcheck="false">
+            <button><img src="images/search.png" alt=""></button>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" alt="" class="weatherIcon">
+            <h1 class="currentTemp">25°c</h1>
+            <h2 class="cityName">Bangalore</h2>
+
+            <div class="details">
+                <p><img src="images/temperature_down.png" alt="" class="minTempIcon icon"><span class="min tempTitles">Min</span><span class="minTemp tempValues">25°c</span></p>
+                <p><img src="images/temperature_up.png" alt="" class="maxTempIcon icon"><span class="max tempTitles">Max</span><span class="maxTemp tempValues">28°c</span></p>
+                <p><img src="images/wind.png" alt="" class="windIcon icon"><span class="wind tempTitles">Wind</span><span class="windSpeed tempValues">26 km/h</span></p>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
