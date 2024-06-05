@@ -72,9 +72,78 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 25px auto 0;
+    margin: 40px auto 0;
+}
+
+.icon{
+    max-width: 45px;
+    max-height: 45px;
 }
 
 .details p{
-    font-size: 20px;   
+    font-size: 20px;  
+    display: flex; 
+    gap: 5px;
+    
+}
+
+.tempTitles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:500px){
+
+    .details{
+        justify-content: space-between;
+    }
+
+    .tempTitles{
+        font-size: 4vw;
+        justify-content: center;
+    }
+
+    .icon{
+        max-width: 10vw;
+    }
+
+    .card{
+        padding: 20px;
+    }
+
+    .search input{
+        height: auto;
+        padding: 10px 10px 10px 15px;
+        margin-right: 10px;
+        font-size: 4vw
+    }
+
+    .search button{
+        width: 35px;
+        height: 35px;
+    }
+
+    .search button img{
+        width: 5vw;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
 }
