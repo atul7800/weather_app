@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter your city name" spellcheck="false">
-            <button><img src="images/search.png" alt=""></button>
-        </div>
-        <div class="weather">
-            <img src="images/rain.png" alt="" class="weatherIcon">
-            <h1 class="currentTemp">25°c</h1>
-            <h2 class="cityName">Bangalore</h2>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Enter your city name"
+          spellcheck="false"
+        />
+        <button><img src="images/search.png" alt="" /></button>
+      </div>
+      <div class="weather">
+        <img src="images/rain.png" alt="" class="weatherIcon" />
+        <h1 class="currentTemp">25°c</h1>
+        <h2 class="cityName">Bengaluru</h2>
 
-            <div class="details">
-                <p><img src="images/temperature_down.png" alt="" class="minTempIcon icon"><span class="min tempTitles"><span>Min</span><span class="minTemp tempValues">25°c</span></span></p>
-                <p><img src="images/temperature_up.png" alt="" class="maxTempIcon icon"><span class="max tempTitles"><span>Max</span><span class="maxTemp tempValues">28°c</span></span></p>
-                <p><img src="images/wind.png" alt="" class="windIcon icon"><span class="max tempTitles"><span>Wind</span><span class="windSpeed tempValues">26&nbsp;km/h</span></span></p>
-            </div>
+        <div class="details">
+          <p>
+            <img
+              src="images/temperature_down.png"
+              alt=""
+              class="minTempIcon icon"
+            /><span class="min tempTitles"
+              ><span>Min</span
+              ><span class="minTemp tempValues">25°c</span></span
+            >
+          </p>
+          <p>
+            <img
+              src="images/temperature_up.png"
+              alt=""
+              class="maxTempIcon icon"
+            /><span class="max tempTitles"
+              ><span>Max</span
+              ><span class="maxTemp tempValues">28°c</span></span
+            >
+          </p>
+          <p>
+            <img src="images/wind.png" alt="" class="windIcon icon" /><span
+              class="max tempTitles"
+              ><span>Wind</span
+              ><span class="windSpeed tempValues">26&nbsp;km/h</span></span
+            >
+          </p>
         </div>
+      </div>
     </div>
 
     <!-- https://api.openweathermap.org/data/2.5/weather?q=germany&appid=87af1a121e3297dead9090b2f5882f40&units=metric -->
     <script src="script.js"></script>
-</body>
-
+  </body>
+  <script src="script.js"></script>
 </html>
